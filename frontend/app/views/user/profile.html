@@ -1,0 +1,16 @@
+<header id="main-header" class="header" ng-include src="'views/partials/nav.html'"></header>
+<section class="container">
+    <form name="profileForm" ng-submit="updateUser()">
+        <div class="form-group">
+            <label for="current-user-first-name" class="control-label">
+                Usuario   :
+            </label>
+            <div>
+                <input type="text" id="current-user-first-name" ng-model="user.first_name"
+                       class="form-control" required/>
+            </div>
+        </div>
+        <input class="btn btn-primary" type="submit"
+               ng-disabled="profileForm.$invalid" value="Actualizar">
+    </form>
+</section>

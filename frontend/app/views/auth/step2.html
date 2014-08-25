@@ -1,0 +1,53 @@
+<h1>Registro</h1>
+<form role="form"
+      id="registerForm"
+      name="registerForm"
+      method="post"
+      class="col-sm-6 general-form"
+      ng-submit="registerUser(user_name_register, user_email_register, user_pass1_register, user_pass2_register)"
+      novalidate>
+
+    <fieldset>
+        <div class="form-group has-error has-feedback">
+            <label for="user_name_register">Usuario</label>
+            <input type="text"
+                   name="user_name_register"
+                   id="user_name_register"
+                   autofocus="true"
+                   class="span3 form-control"
+                   placeholder="Ingresa tu usuario"
+                   ng-model="user_name_register">
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label for="user_email_register">Email</label>
+            <input type="email"
+                   name="user_email_register"
+                   id="user_email_register"
+                   autofocus="true"
+                   class="span3 form-control"
+                   placeholder="Ingresa tu email"
+                   ng-model="user_email_register">
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label for="user_pass1_register">Contraseña</label>
+            <input type="password"
+                   name="user_pass1_register"
+                   id="user_pass1_register"
+                   class="span3 form-control"
+                   placeholder="contraseña"
+                   ng-model="user_pass1_register">
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label for="user_pass2_register">Contraseña</label>
+            <input type="password"
+                   name="user_pass2_register"
+                   id="user_pass2_register"
+                   class="span3 form-control"
+                   placeholder="contraseña"
+                   ng-model="user_pass2_register">
+        </div>
+        <div class="form-group form-group-no-selected">
+            <input type="submit" ng-disabled="registerForm.$invalid" value="Entrar" name="button" class="col-sm-6 btn btn-default btn-lg">
+        </div>
+    </fieldset>
+</form>

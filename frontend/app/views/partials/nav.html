@@ -1,0 +1,36 @@
+<nav ng-controller="NavCtrl" class="general-content row no-margin" role="navigation">
+    <div class="navbar-header col-xs-12 col-md-6 col-sm-6">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <i class="fa fa-align-justify"></i>
+        </button>
+        <a class="navbar-brand" href="#">
+            <figure>
+                <h1>RedApp</h1>
+                <img src="" alt=""/>
+            </figure>
+        </a>
+    </div>
+    <div class="collapse navbar-collapse col-xs-12 col-md-6 col-sm-6" id="menu">
+        <ul class="nav navbar-nav">
+            <li ng-class="{active: $state.includes('home')}"
+                ng-if="isAuthenticated != 'true' ">
+                <a ui-sref="home"> <i class="fa fa-home"></i> Inicio</a>
+            </li>
+            <li ng-class="{active: $state.includes('auth')}"
+                ng-if="isAuthenticated != 'true' ">
+                <a ui-sref="auth.step1">Inicia tu sesión </a>
+            </li>
+            <li ng-class="{active: $state.includes('auth')}"
+                ng-if="isAuthenticated != 'true' ">
+                <a ui-sref="auth.step2">Crear Cuenta </a>
+            </li>
+            <li ng-class="{active: $state.includes('profile')}"
+                ng-if="isAuthenticated == 'true' ">
+                <a ui-sref="profile">Perfil</a>
+            </li>
+            <li ng-if="isAuthenticated == 'true' ">
+                <a href="" ng-click="logOutUser()">Salir</a>
+            </li>
+        </ul>
+    </div>
+</nav>

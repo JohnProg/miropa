@@ -1,0 +1,20 @@
+STEPS:
+
+//instala nodejs (ya viene con npm)
+
+//verifica
+node --version && npm --version
+
+//instalar modulos necesarios 
+sudo npm install -g yo grunt-cli bower karma
+
+//clonar
+git clone git@github.com:DTPGroovyWebSolutionsSAC/cursostotales-sapie.git
+//instala el package.json
+sudo npm install
+
+//instala dependendias
+bower install
+
+//add bootsrap
+bower install angular-bootstrap --save

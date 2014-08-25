@@ -1,0 +1,33 @@
+<h1>Ingreso</h1>
+<form role="form"
+      id="loginForm"
+      name="loginForm"
+      method="post"
+      class="col-sm-6 general-form"
+      ng-submit="loginUser(user_name_login, user_pass_login)"
+      novalidate>
+    <fieldset>
+        <div class="form-group has-error has-feedback">
+            <label for="user_name_login">Usuario</label>
+            <input type="text"
+                   name="user_name_login"
+                   id="user_name_login"
+                   autofocus="true"
+                   class="span3 form-control"
+                   placeholder="Ingresa tu usuario"
+                   ng-model="user_name_login">
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label for="user_pass_login">Contraseña</label>
+            <input type="password"
+                   name="user_pass_login"
+                   id="user_pass_login"
+                   class="span3 form-control"
+                   placeholder="contraseña"
+                   ng-model="user_pass_login">
+        </div>
+        <div class="form-group form-group-no-selected">
+            <input type="submit" ng-disabled="loginForm.$invalid" value="Entrar" name="button" class="col-sm-6 btn btn-default btn-lg">
+        </div>
+    </fieldset>
+</form>
