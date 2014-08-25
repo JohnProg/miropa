@@ -1,0 +1,15 @@
+- model: people.Material
+  pk: 1
+  fields:
+    name: Clavo
+    photo: null
+    category: "1"
+- model: people.Material
+  pk: 2
+  fields:
+    name: Botella
+    photo: null
+    category: ["5", "8"]
+- fields: {name: Goma, photo: null, category: ["7", "3", "4", "6"]}
+  model: people.Material
+  pk: 3

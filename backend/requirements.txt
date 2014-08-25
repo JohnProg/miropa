@@ -1,0 +1,6 @@
+Django==1.6.5
+South==0.8.4
+unipath==1.0
+Pillow==2.5.0
+PyYAML==3.11
+django-grappelli

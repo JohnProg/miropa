@@ -1,0 +1,10 @@
+[
+{"pk": 1, "model": "people.category", "fields": {"name": "Metal", "image": "", "slug": "Metal"}},
+{"pk": 2, "model": "people.category", "fields": {"name": "Papel", "image": "", "slug": "Papel"}},
+{"pk": 3, "model": "people.category", "fields": {"name": "Madera", "image": "", "slug": "Madera"}},
+{"pk": 4, "model": "people.category", "fields": {"name": "Vidrio", "image": "", "slug": "Vidrio"}},
+{"pk": 5, "model": "people.category", "fields": {"name": "Contenedor", "image": "", "slug": "Contenedor"}},
+{"pk": 6, "model": "people.category", "fields": {"name": "Electro-domestico", "image": "", "slug": "Electro-domestico"}},
+{"pk": 7, "model": "people.category", "fields": {"name": "Pegamento", "image": "", "slug": "Pegamento"}},
+{"pk": 8, "model": "people.category", "fields": {"name": "Plastico", "image": "", "slug": "Plastico"}}
+]
