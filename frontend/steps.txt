@@ -8,8 +8,7 @@ node --version && npm --version
 //instalar modulos necesarios 
 sudo npm install -g yo grunt-cli bower karma
 
-//clonar
-git clone git@github.com:DTPGroovyWebSolutionsSAC/cursostotales-sapie.git
+//clonar repo
 //instala el package.json
 sudo npm install
 
